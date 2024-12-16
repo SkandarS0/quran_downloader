@@ -14,7 +14,7 @@ To set up and run this project, you need Docker. The presence of a `Dockerfile` 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/quran-downloader.git
+   git clone https://github.com/SkandarS0/quran-downloader.git
    cd quran-downloader
    ```
 
