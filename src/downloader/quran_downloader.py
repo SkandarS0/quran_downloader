@@ -10,6 +10,7 @@ from src.utils.chunk_utils import chunks
 
 SURAH_AUDIO_URL = "https://cdn.islamic.network/quran/audio-surah/128/ar.aliabdurrahmanalhuthaifyqaloon/{number}.mp3"
 
+
 async def download_surah(session: aiohttp.ClientSession, surah: SurahReference) -> None:
     audio_url = SURAH_AUDIO_URL.format(number=surah["number"])
     try:

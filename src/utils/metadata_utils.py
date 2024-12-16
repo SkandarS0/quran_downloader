@@ -5,6 +5,7 @@ from src.custom_types import MetadataResponse, SurahReference
 
 METADATA_URL = "https://api.alquran.cloud/v1/meta"
 
+
 async def load_metadata() -> list[SurahReference]:
     async with aiohttp.ClientSession() as session:
         async with session.get(METADATA_URL) as response:

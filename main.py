@@ -1,10 +1,9 @@
 import asyncio
 
-import aiohttp
 from colorama import Fore, Style, init
 
 from src.config.logging_config import setup_logging, logger
-from src.custom_types import SurahReference, MetadataResponse
+from src.custom_types import SurahReference
 from src.downloader.quran_downloader import start_downloading
 from src.utils.metadata_utils import load_metadata
 
