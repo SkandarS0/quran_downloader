@@ -4,13 +4,16 @@ Welcome to the Quran Downloader project, a simple tool that allows users to down
 
 ## Description
 
-Quran Downloader is a Python-based application that helps users select and download specific Surahs from the Quran via a menu-driven interface. It retrieves metadata about the Quran from an online source and uses that information to allow you to choose the Surahs you need.
+Quran Downloader is a Python-based application that helps users select and download specific Surahs from the Quran via a
+menu-driven interface. It retrieves metadata about the Quran from an online source and uses that information to allow
+you to choose the Surahs you need.
 
 ## Installation
 
-To set up and run this project, you need Docker. The presence of a `Dockerfile` in the project allows for easy setup and execution within a Docker environment.
+To set up and run this project, you need Docker. The presence of a `Dockerfile` in the project allows for easy setup and
+execution within a Docker environment.
 
-### Steps
+### With Docker
 
 1. Clone this repository:
    ```bash
@@ -28,9 +31,35 @@ To set up and run this project, you need Docker. The presence of a `Dockerfile` 
    docker run -it quran-downloader
    ```
 
-## Usage
+> Once the Docker container is running, the `main.py` script will execute, launching an interactive menu for selecting and
+downloading Surahs.
 
-Once the Docker container is running, the `main.py` script will execute, launching an interactive menu for selecting and downloading Surahs.
+### Without Docker
+
+If you prefer to run the project without Docker, you can do so by following these steps:
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/SkandarS0/quran-downloader.git
+   cd quran-downloader
+   ```
+
+2. Create a virtual environment:
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+3. Install the project dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. Run the project:
+    ```bash
+    python main.py
+    ```
+   
 
 **Main Features:**
 
